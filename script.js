@@ -93,12 +93,29 @@ function selectAnswer(e){
     });
     nextButton.style.display= "block";
 }
-nextButton.addEventListener("click", () => {
-    if (currentQuestionIndex < questions.length - 1) {
-        currentQuestionIndex++;
+function showScore(){
+    resetState();
+    questionElement.innerHTML= `You scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML= 'Play Again'
+    nextButton.style.display="block"
+}
+
+
+function handleNextButton(){
+    currentQuestionIndex++;
+    if( currentQuestionIndex< questions.length){
         showQuestion();
-    } else {
-        startQuiz();
+    }else{
+        showScore();
     }
-});
+
+}
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
+        handleNextButton();
+    }else{
+        startQuiz();
+    }})
+
+        
 startQuiz();
