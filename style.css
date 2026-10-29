@@ -6,7 +6,13 @@
 }
 body {
     background: linear-gradient(rgb(36, 0, 128));
-}
+}header {
+      background: linear-gradient(135deg, #004225, #007a3d);
+      color: #ffffff;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
 .app{
     background:#fff;
     width:90%;
