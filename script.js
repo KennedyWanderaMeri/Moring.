@@ -10,15 +10,15 @@ const questions =[
         answers: [
             { text: "England", correct: false},
             { text: "South Africa", correct: false},
-            { text: "New zealand", correct: true},
+            { text: "New Zealand", correct: true},
             { text: "Kenya", correct: false},] 
     },
     { question: "In standard Rugby Union squad numbering, which position traditionally wears the No. 9 jersey?",
         answers: [
-            { text: "fly half", correct: false},
-            { text: "scrum half", correct: true},
-            { text: "hooker", correct: false},
-            { text: "Fullbuck", correct: false},] 
+            { text: "Fly half", correct: false},
+            { text: "Scrum half", correct: true},
+            { text: "Hooker", correct: false},
+            { text: "Fullback", correct: false},] 
     },
     { question: "How many points is a successful Penalty Kick or Drop Goal worth in Rugby Union?",
         answers: [
