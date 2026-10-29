@@ -13,6 +13,12 @@ body {
   background: #001e4d;
   font-family: sans-serif;
 }
+p {
+    width: 100%;
+    border: 0cap;
+    text-align: left;
+    display: flex;
+}
 #contactForm {
   width: 90vw;
   max-width: 400px;
@@ -33,21 +39,24 @@ button {
   background: #001e4d;
   border: 0;
   cursor: pointer;
+
 }
 
-
-
-
+/* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
     </style>
 </head>
 <body>
     <section>
 <p>
     Welcome to Rugby Quiz Hub! We are passionate rugby fans dedicated to bringing you short, sharp, and exciting trivia about world rugby. From local club histories to international championships, test your knowledge across players, rules, and legendary matches.
-
 </p>
 </section>
-
 <section>
 <form id="contactForm">
         <div class="form-group">
@@ -66,6 +75,10 @@ button {
       </form>
 
 </section>
+<footer> 
+    <p>&copy; 2026 Rugby Quiz Hub. All rights reserved.</p>
+    <br>wanderaken1@gmail.com<br>
+</footer>
 <script>
 const form = document.getElementById("contactForm");
 
