@@ -80,6 +80,110 @@ nav { justify-content: center; gap: 15px; }
 </head>
 <body>
 <header> <h2>🏉 RUGBY ZONE</h2> <nav> <a href="#home">Home</a>
+    <a href="index.html"> Rugby Quiz </a> 
+    <a href="Feedback.html">Feedback</a>
+    
+    
+    <a href="#about">About</a>
+     <a href="#contact">Contact</a> 
+    </nav> </header>
+    <section class="hero" id="home"> 
+        <h1>WELCOME TO RUGBY ZONE</h1>
+         <p>Passion, Strength, Teamwork and Victory!</p>
+          <button onclick="showMessage()">Explore Rugby</button> 
+            <h2>About Rugby</h2>
+             <p>Rugby is an exciting team sport that builds strength, discipline, teamwork and sportsmanship.</p>
+    </section>
+<footer id="contact"> <p>&copy; 2026 Rugby Quiz Hub | All Rights Reserved</p>
+ </footer>
+<script>
+function showMessage() {
+    alert("Welcome to Rugby Zone! 🏉");
+}
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Rugby</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #063d25;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.hero {
+    min-height: 75vh;
+    color: purple;
+    text-align: center;
+    padding: 150px 20px;
+}
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+button {
+    background: #f4c430;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}footer {
+    background: #063d25;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (min-width: 1200px) { .hero { padding: 120px 10%; } }
+@media screen and (max-width: 360px) 
+{ header h2 { font-size: 19px; } 
+nav { gap: 10px; } 
+nav a { font-size: 12px; } 
+.hero h1 { font-size: 25px; }
+ .hero p { font-size: 14px; } }
+ @media screen and (max-width: 900px) { header { padding: 18px 4%; }
+  header h2 { font-size: 23px; } 
+ nav { gap: 14px; } 
+ .hero { min-height: 65vh; padding: 80px 25px; } }
+@media screen and (max-width: 600px) { 
+header { flex-direction: column; text-align: center; gap: 12px; padding: 18px 12px; } 
+header h2 { font-size: 22px; } 
+nav { justify-content: center; gap: 15px; }
+ nav a { font-size: 14px; margin: 0; } 
+ .hero { min-height: 70vh; padding: 60px 18px; } 
+ .hero h1 { font-size: 30px; } 
+ .hero p { font-size: 16px; } 
+ .hero h2 { font-size: 23px; margin-top: 28px; } 
+ button { width: 100%; max-width: 250px; padding: 13px 18px; } 
+ footer { font-size: 14px; padding: 18px 10px; } }
+
+
+
+</style>
+</head>
+<body>
+<header> <h2>🏉 RUGBY ZONE</h2> <nav> <a href="#home">Home</a>
      <a href="#about">About</a>
      <a href="#contact">Contact</a> 
     </nav> </header>
