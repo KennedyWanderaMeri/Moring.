@@ -12,8 +12,11 @@
 ├── index.html      # Quiz page
 ├── Feedback.html   # Feedback / contact form page
 ├── style.css       # Styling for both pages
-└── script.js       # Quiz logic
+├── Home.html       # Rugby information
+
+
 #### License
+
 © 2026 Rugby Quiz IQ. All rights reserved.
 ##### Technologies
 - HTML
@@ -52,3 +55,5 @@ javascript
 The page has a header with a link to the feedback page, and a quiz area. 
 ###### style.css
 it gives life to the web 
+#### Home.html
+contain background information.
