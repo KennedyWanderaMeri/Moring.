@@ -57,17 +57,37 @@ button {
       font-size: 0.9rem;
       color: #666;
     }
+@media (max-width: 360px) {
+  header h1 { font-size: 1.4rem; }
+  section { padding: 0 .75rem; font-size: .9rem; }
+  #contactForm { width: 94vw; padding: 1rem; }
+  footer { font-size: .8rem; }
+}
+@media (min-width: 600px) {
+  #contactForm { max-width: 500px; }
+  section p { text-align: center; font-size: 1.05rem; }
+}
+@media (min-width: 1024px) {
+  #contactForm { max-width: 600px; padding: 2rem; }
+  section p { font-size: 1.15rem; }
+  button { padding: .8rem;}}
+@media (min-width: 1440px) {
+  header h1 { font-size: 3rem; }
+  #contactForm { max-width: 650px; }}
+@media (max-height: 480px) and (orientation: landscape) {
+  header { padding: .6rem 1rem; }
+  header h1 { font-size: 1.3rem; }
+  textarea { min-height: 4rem; }
+  footer { padding: .75rem; }
+}
     </style>
 </head>
 <body>
 <header>
     <h1>Rugby Quiz Hub</h1>
-    <p>Test your match knowledge to relearn the wisdom.
-        
+    <p>Test your match knowledge to relearn the wisdom.       
     </p>
   </header>
-
-
     <section>
 <p> Great sport for human life. The form collects the data for young people, players and fans for deveolpment.</p>
 </section>
@@ -87,7 +107,6 @@ button {
         </div>
         <button type="submit">Send Message</button>
       </form>
-
 </section>
 <footer> 
     <p>&copy; 2026 Rugby Quiz Hub. All rights reserved.</p>
@@ -95,23 +114,16 @@ button {
 </footer>
 <script>
 const form = document.getElementById("contactForm");
-
 form.addEventListener("submit", e => {
   e.preventDefault();
-
   const email = document.getElementById("email").value.trim();
   const message = document.getElementById("message").value.trim();
-
   const saved = JSON.parse(localStorage.getItem("feedback")) || [];
   saved.push({ email, message });
   localStorage.setItem("feedback", JSON.stringify(saved));
-
   form.reset();
   alert("Thanks! Your message was saved.");
 });
-
-
  </script>
-
 </body>
 </html>

@@ -51,6 +51,31 @@ button {
     text-align: center;
     padding: 20px;
 }
+@media screen and (min-width: 1200px) { .hero { padding: 120px 10%; } }
+@media screen and (max-width: 360px) 
+{ header h2 { font-size: 19px; } 
+nav { gap: 10px; } 
+nav a { font-size: 12px; } 
+.hero h1 { font-size: 25px; }
+ .hero p { font-size: 14px; } }
+ @media screen and (max-width: 900px) { header { padding: 18px 4%; }
+  header h2 { font-size: 23px; } 
+ nav { gap: 14px; } 
+ .hero { min-height: 65vh; padding: 80px 25px; } }
+@media screen and (max-width: 600px) { 
+header { flex-direction: column; text-align: center; gap: 12px; padding: 18px 12px; } 
+header h2 { font-size: 22px; } 
+nav { justify-content: center; gap: 15px; }
+ nav a { font-size: 14px; margin: 0; } 
+ .hero { min-height: 70vh; padding: 60px 18px; } 
+ .hero h1 { font-size: 30px; } 
+ .hero p { font-size: 16px; } 
+ .hero h2 { font-size: 23px; margin-top: 28px; } 
+ button { width: 100%; max-width: 250px; padding: 13px 18px; } 
+ footer { font-size: 14px; padding: 18px 10px; } }
+
+
+
 </style>
 </head>
 <body>
