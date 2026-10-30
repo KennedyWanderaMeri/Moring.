@@ -40,16 +40,16 @@ body {
     font-size: 25px;
     color: black;
     border-bottom: 1px solid #333;
-    font-weight: 500;
+    font-weight: 400;
     padding-bottom: 30px;
 }
 .quiz{
     padding: 20px 0;
 }
 .quiz h2 {
-    font-size: 18px;
+    font-size: 15px;
     color: red;
-    font-weight: 500;
+    font-weight: 400;
 
 
 }

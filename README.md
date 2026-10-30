@@ -49,4 +49,6 @@ javascript
 * selectAnswer() checks the chosen answer, colors it green (correct) or red (wrong), reveals the correct one, disables all buttons and shows the Next button.
 ###### index.html
 
-The page has a header with a link to the feedback page, and a quiz area.       
+The page has a header with a link to the feedback page, and a quiz area. 
+###### style.css
+it gives life to the web 
