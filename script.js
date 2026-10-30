@@ -57,7 +57,7 @@ function resetState(){ nextButton.style.display = "none";
     }}
 function selectAnswer(e){
     const selectedBtn = e.target;
-    const iscorrect = selectedBtn.dataset.correct=="true"
+    const iscorrect = selectedBtn.dataset.correct==="true"
     if(iscorrect){ 
         selectedBtn.classList.add("correct");
         selectedBtn.style.background = "green";
