@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Rugby</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #063d25;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.hero {
+    min-height: 75vh;
+    color: purple;
+    text-align: center;
+    padding: 150px 20px;
+}
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+button {
+    background: #f4c430;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}footer {
+    background: #063d25;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+<header> <h2>🏉 RUGBY ZONE</h2> <nav> <a href="#home">Home</a>
+     <a href="#about">About</a>
+     <a href="#contact">Contact</a> 
+    </nav> </header>
+    <section class="hero" id="home"> 
+        <h1>WELCOME TO RUGBY ZONE</h1>
+         <p>Passion, Strength, Teamwork and Victory!</p>
+          <button onclick="showMessage()">Explore Rugby</button> 
+            <h2>About Rugby</h2>
+             <p>Rugby is an exciting team sport that builds strength, discipline, teamwork and sportsmanship.</p>
+    </section>
+<footer id="contact"> <p>&copy; 2026 Rugby Quiz Hub | All Rights Reserved</p>
+ </footer>
+<script>
+function showMessage() {
+    alert("Welcome to Rugby Zone! 🏉");
+}
+</script>
+</body>
+</html>
