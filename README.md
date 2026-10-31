@@ -8,7 +8,9 @@ A rugby union trivia game built with vanilla JavaScript, HTML, and CSS. Answer m
 - Instant feedback: correct answers turn green, wrong ones turn red
 - The right answer is revealed after every guess
 - Score tracking with a final results screen
-- "Play Again" button to restart without reloading the page 
+- "Play Again" button to restart without reloading the page
+* Demonstration
+![Rugby Quiz](<Screenshot 2026-10-31 202145.png>)
  ### Getting Started
 1. Clone the repository:
    bash

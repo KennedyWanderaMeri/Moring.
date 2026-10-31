@@ -34,20 +34,20 @@ const nextButton = document.getElementById ("next-btn");
 // Quiz state//
 let currentQuestionIndex =0;
 let score = 0;
-// Starts (or restarts) the quiz: resets progress and shows the first question
+// Starts (or restarts) the quiz: resets progress and shows the first question//
 function startQuiz(){
     currentQuestionIndex =0;
     score = 0;
     nextButton.innerHTML = "Next";
 showQuestion();
 }
-// Displays the current question and creates a button for each answer
+// Displays the current question and creates a button for each answer//
 function showQuestion() {
     resetState(); // Clear the previous question's buttons and hide the Next button
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-     // Loop through each answer and build a button for it
+     // Loop through each answer and build a button for it//
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
@@ -61,7 +61,7 @@ function resetState(){ nextButton.style.display = "none";
     while(answerButtons.firstChild){
         answerButtons.removeChild(answerButtons.firstChild);
     }} 
-    // Handles the user clicking an answer
+    // Handles the user clicking an answer//
 function selectAnswer(e){
     const selectedBtn = e.target;
     const iscorrect = selectedBtn.dataset.correct==="true"
@@ -89,7 +89,7 @@ function showScore(){
     nextButton.innerHTML= 'Play Again'
     nextButton.style.display="block"
 }
-// Moves to the next question, or shows the score if there are no more questions
+// Moves to the next question, or shows the score if there are no more questions//
 function handleNextButton(){
     currentQuestionIndex++;
     if( currentQuestionIndex< questions.length){
@@ -97,12 +97,12 @@ function handleNextButton(){
     }else{
         showScore();
     }}
-    // Click handler for the Next / Play Again button
+    // Click handler for the Next / Play Again button//
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton(); // go to next Question
     }else{
         startQuiz(); // finished; play Again
     }})
-// Start the quiz as soon as the script loads
+// Start the quiz as soon as the script loads//
 startQuiz();
