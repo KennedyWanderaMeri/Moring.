@@ -5,8 +5,9 @@
   box-sizing: border-box
 }
 body {
-    background: linear-gradient(rgb(36, 0, 128));
-}header {
+    background: linear-gradient(rgb(36, 0, 128));}
+    */Header*/
+header {
       background: linear-gradient(135deg, #004225, #007a3d);
       color: #ffffff;
       text-align: center;

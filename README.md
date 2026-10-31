@@ -1,59 +1,50 @@
-# Moring.
-# Rugby Quiz IQ
-- It is a simple choice Quiz that tests your Rugby Union knowledge.
-- it is built with plain HTML,CSS and javascript.
+# Rugby Quiz
+
+A rugby union trivia game built with vanilla JavaScript, HTML, and CSS. Answer multiple-choice questions, get instant feedback, and see your final score.
+
 ## Features
-* Multiple-choice questions shown one at a time.
-* Instant feedback: the correct answer is highlighted after you pick
-* Score tracking across the whole quiz
-* A Next button that appears after each answer
-* A separate Feedback page where visitors can send a message (saved in the browser).
+
+- Multiple-choice questions on rugby union rules, history, and positions
+- Instant feedback: correct answers turn green, wrong ones turn red
+- The right answer is revealed after every guess
+- Score tracking with a final results screen
+- "Play Again" button to restart without reloading the page 
+ ### Getting Started
+1. Clone the repository:
+   bash
+   git clone https://github.com/your-username/your-repo-name.git
+2. Open the project folder.
+3. Open `index.html` in your browser. No installs or build steps needed.
 ### Project Structure
 ├── index.html      # Quiz page
 ├── Feedback.html   # Feedback / contact form page
 ├── style.css       # Styling for both pages
 ├── Home.html       # Rugby information
-
-
-#### License
-
-© 2026 Rugby Quiz IQ. All rights reserved.
-##### Technologies
+#### How to Add Your Own Questions
+Questions live in the `questions` array at the top of `script.js`. Add a new object in this format, with exactly one answer marked `correct: true`:
+{
+    question: "Your question here?",
+    answers: [
+        { text: "Answer A", correct: false },
+        { text: "Answer B", correct: true },
+        { text: "Answer C", correct: false },
+        { text: "Answer D", correct: false },
+    ]
+}
+##### How It Works
+- `startQuiz()` resets the score and shows the first question.
+- `showQuestion()` builds a button for each answer.
+- `selectAnswer()` checks the choice, updates the score, and locks the buttons.
+- `showScore()` displays the final result when the questions run out.
+###### Built With
 - HTML
 - CSS
-- Javascript(ES6)
+- JavaScript (ES6)
 - Browser LocalStorage
-###### Adding Your Own Questions
-* Add a new object to the Questions array in script.js, following the format above. Keep exactly one answer set to correct: true
-###### How it runs
+###### Ideas for Improvement
+- Add more questions and shuffle their order
+- Add a timer for each question
+- Save high scores with `localStorage`
 
-## Feedback form
-- The feedback page saves the email and message from each submission in the browser's localStorage under the key feedback. Nothing is sent to a server.
-- To view saved messages, open DevTools (F12), go to Application → Local Storage, and select your page.
-### script.js
-
-Questions are stored in an array of objects. Each question has its text and a list of answers, and exactly one answer is marked correct: true:
-
-javascript
-{
-  question: "How many points is a successful Penalty Kick worth?",
-  answers: [
-    { text: "2 points", correct: false },
-    { text: "3 points", correct: true },
-    { text: "5 points", correct: false },
-    { text: "7 points", correct: false }
-  ]
-}
-# Main functions:
-
-* startQuiz() resets the question number and score to 0, then shows the first question.
-* showQuestion() clears the old buttons, displays the current question and creates one button per answer.
-* resetState() hides the Next button and removes the previous answer buttons.
-* selectAnswer() checks the chosen answer, colors it green (correct) or red (wrong), reveals the correct one, disables all buttons and shows the Next button.
-###### index.html
-
-The page has a header with a link to the feedback page, and a quiz area. 
-###### style.css
-it gives life to the web 
-#### Home.html
-contain background information.
+###### License
+This project is open source and available under the copyright laws.
